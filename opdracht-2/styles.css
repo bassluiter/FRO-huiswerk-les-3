@@ -19,7 +19,7 @@ body {
     flex-shrink: 3;
     flex-basis: 300px;
 }
-div img:first-of-type {
+div img:nth-of-type(2) {
     width: 25px;
 }
 .nav-container div {
@@ -34,6 +34,7 @@ ul {
     list-style: none;
     border: 2px solid orange;
     flex-grow: 1;
+    cursor: pointer;
 }
 li a {
     display: flex;
@@ -68,7 +69,9 @@ header {
     background-image: url("../assets/placeholder-image.svg");
     background-position: center;
     text-align: center;
+    min-height: 300px;
     height: 40vh;
+    max-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,6 +80,12 @@ header {
 }
 h1 {
     font-size: clamp(1rem, 4vw, 2.7rem);
+}
+header p {
+    max-width: 600px;
+    margin: 0 auto;
+
+
 }
 
 /*--------------main section -----------------------*/
@@ -98,16 +107,20 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 30px;
+    padding: 40px;
 }
 .product-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: clamp(10px, 2vh, 30px);
+    gap: clamp(5px, 1vh, 25px);
     flex-basis: 250px;
     max-width: 260px;
-
+}
+.card-img {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
 }
 .product-card-price-container {
     display: flex;
@@ -115,7 +128,7 @@ h1 {
     justify-content: space-between;
 }
 .product-card-price-container > img{
-    height: 20px;
+    height: 18px;
 }
 
 /*--------------footer section -----------------------*/
