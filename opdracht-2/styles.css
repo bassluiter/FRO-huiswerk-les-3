@@ -10,7 +10,6 @@ body {
 /*--------------navbar section -----------------------*/
 .nav-container {
     background-color: #f3f3f3;
-    border: solid darkgray;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -18,6 +17,7 @@ body {
     flex-grow: 1;
     flex-shrink: 3;
     flex-basis: 300px;
+    /*border: solid darkgray;*/
 }
 div img:nth-of-type(2) {
     width: 25px;
@@ -25,16 +25,16 @@ div img:nth-of-type(2) {
 .nav-container div {
     display: flex;
     flex-direction: row;
-    border: 2px solid pink;
     gap: 15px;
     align-items: center;
     flex-grow: 0;
+    /*border: 2px solid pink;*/
 }
 ul {
     list-style: none;
-    border: 2px solid orange;
     flex-grow: 1;
     cursor: pointer;
+    /*border: 2px solid orange;*/
 }
 li a {
     display: flex;
@@ -51,21 +51,16 @@ li img {
     width: 100%;
     align-items: center;
     gap: 10px;
-
 }
 .button-container li{
     width: 100%;
-
 }
 button {
     width: 100%;
 }
 
-
 /*--------------header section -----------------------*/
-
 header {
-    border: solid blue;
     background-image: url("../assets/placeholder-image.svg");
     background-position: center;
     text-align: center;
@@ -77,6 +72,7 @@ header {
     justify-content: center;
     gap: 10px;
     padding: 20px;
+    /*border: solid blue;*/
 }
 h1 {
     font-size: clamp(1rem, 4vw, 2.7rem);
@@ -84,43 +80,38 @@ h1 {
 header p {
     max-width: 600px;
     margin: 0 auto;
-
-
 }
 
 /*--------------main section -----------------------*/
 .main-container {
     display: flex;
     flex-direction: column;
-    border: solid cyan;
     overflow: auto;
     flex-grow: 8;
     flex-shrink: 1;
     flex-basis: 50vw;
+    /*border: solid cyan;*/
 }
-
 .product-card-container {
-    border: solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 30px;
     padding: 40px;
+    /*border: solid red;*/
 }
 .product-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: clamp(5px, 1vh, 25px);
+    aspect-ratio: 1/1.2;
     flex-basis: 250px;
     max-width: 260px;
 }
 .card-img {
     width: 100%;
-    height: 100%;
-    flex-grow: 1;
 }
 .product-card-price-container {
     display: flex;
